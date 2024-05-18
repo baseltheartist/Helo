@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>signup</title>
+</head>
+<body>
+<div class="form.container">
+    <h2>signup</h2>
+        <form action="/signup" method="post">
+            <div class="form group">
+                <label for="first name">First Name:</label>
+                    <input type="text" id="name" name="fName" placeholder="Enter First Name" required autocomplete="off">
+                    <label for="last name">Last Name:</label>
+                    <input type="text" id="name" name="lName" placeholder="Enter Last Name" required autocomplete="off">
+            </div>
+            <div class="form group">
+                <label for="email">email:</label>
+                    <input type="text" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form group">
+                <label for="PhoneNumber">Phone Number:</label>
+                    <input type="tel" id="PhoneNumber" name="phone" placeholder="Enter PhoneNumber" required>
+            </div>
+            <div class="form group">
+                <label for="BirthDate">Birth Date:</label>
+                    <input type="date" id="BirthDate" name="birthdate" placeholder="Enter your Birth Date" required>
+            </div>
+            <div class="form group">
+                <label for="Gender">Gender:</label>
+                <select name="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <div class="form group">
+                <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter Password" required>
+            </div>
+            <div class="form group">
+                <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+            </div>
+            <button type="submit" class="submit-btn">Signup</button>   
+        </form>
+    </div>
+</body>
+</html>
